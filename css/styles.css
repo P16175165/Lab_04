@@ -1,23 +1,64 @@
 /* MOBILE AND GLOBAL STYLES */
+div {
+  background-color: black;
+  justify-content: center;
+  color: white;
+  line-height: 2em;
+}
+nav a{
+  color: black;
+  align-items: center;
+  padding: 0.2em;
+  text-decoration: none;
+}
+
+/*div:hover + nav, nav:hover{
+  display: flex;
+  color: grey;
+  background: grey;
+}
+*/
+nav{
+  display: none;
+}
+.menu-toggle{
+  display: flex;
+}
+
 
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
 body {
   background: #fcc;
-} 
+}
 
 
 
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+  }
+  nav a {
+    padding: 1.25em 1.5em;
+    color: #ccc;
+    background: #555;
+    text-decoration: none;
+    transition: all 1.5s;
+  }
+div{
+  display: none;
+}
 
   /* applies to screens wider than 499px */
-  
+
   body {
     background: #cfc;
-  } 
+  }
 }
 
 
@@ -30,5 +71,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
